@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative h-[70vh] md:h-[80vh] md:w-[80vw] mx-auto flex items-center justify-center bg-black overflow-hidden">
       {/* Background Image */}
       <img
-        src="src\assets\images\heroImg.jpg" // Replace with your image path
+        src="/images/heroImg.jpg" // Replace with your image path
         alt="Blog Hero"
         className="absolute inset-0 h-full w-full object-cover object-center opacity-100"
       />
