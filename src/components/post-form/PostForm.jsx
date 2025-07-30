@@ -119,7 +119,7 @@ export default function PostForm({ post }) {
                     </div>
                 </div>
             <RTE label="" name="content" control={control} defaultValue={getValues("content")} />
-            <div onClick={(e) => e.preventDefault()} className="flex justify-center md:justify-end items-center w-full px-20 py-5 scale-90 md:scale-100">
+            <div className="flex justify-center md:justify-end items-center w-full px-20 py-5 scale-90 md:scale-100">
                 <div className="flex items-center gap-x-2 px-4 py-2 rounded-lg text-[#f5f5f5] bg-[#191919]">
                     <button className="active:scale-90">
                         <i className="fa-regular fa-floppy-disk text-3xl text-[#f5f5f5]"></i>
