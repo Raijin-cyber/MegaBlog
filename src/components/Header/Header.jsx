@@ -35,6 +35,16 @@ function Header() {
       slug: "/add-post",
       active: authStatus,
   },
+  {
+      name: "Profile",
+      slug: "/profile",
+      active: authStatus, 
+  },
+  {
+      name: "Setting",
+      slug: "/setting",
+      active: authStatus, 
+  },
   ]
 
 
@@ -69,10 +79,10 @@ function Header() {
           </ul>
         </div>
       </div>
+
+      {/* for mobile screens */}
       <div className='md:hidden flex justify-between items-center w-full'>
-        <div className=''>
-          <HamburgerMenu navItems={navItems} />
-        </div>
+        <HamburgerMenu navItems={navItems} />
         <div className='absolute left-1/2 transform -translate-x-1/2'>
           <Logo />
         </div>

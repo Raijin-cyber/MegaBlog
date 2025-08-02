@@ -4,13 +4,15 @@ import LikeBtn from './LikeBtn'
 import ShareBtn from './ShareBtn'
 import parse from 'html-react-parser'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const PostCard = ({post}) => {
     const [likeState, setLikeState] = useState(false);
+    const userData = useSelector(state => state.auth.userData);
     const postContent = parse(post.content) || '';
   return (
     <div>        
-        <div className='w-[85vw] h-[40vh] 
+        <div className='relative w-[85vw] h-[40vh] 
                         md:h-[50vh] md:w-[30vw] 
                         text-md 
                         bg-[#f5f5f5] shadow-2xl rounded-xl'
@@ -37,10 +39,10 @@ const PostCard = ({post}) => {
                         <div className='font-serif md:h-20 text-sm line-clamp-4'>{postContent} </div>
                     </div>
                 </Link>
-                {/* <Link to={`/profile/${post.userId}`} className='absolute top-0 z-50 text-slate-500 font-light text-sm px-4'>
-                    posted by Ujjwal Sharma, (1M+)
-                </Link> */}
             </div>
+            <Link to={`/profile/${post.userId}`} className='absolute bottom-3 right-1 z-50 text-[#708090]/80 font-light text-xs px-4'>
+                {`posted by ${post.userName}`}
+            </Link>
         </div>
     </div>
   )

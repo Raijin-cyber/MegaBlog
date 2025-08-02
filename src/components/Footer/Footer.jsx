@@ -9,7 +9,9 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold mb-4"><Logo /></h2>
             <p className="text-sm text-gray-400">
-              One place for all.
+              Thanks for stopping by!
+              <br />
+              Stay curious, stay inspired.
             </p>
           </div>
 
@@ -24,12 +26,12 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-3">Connect</h3>
+            <h3 className="text-lg font-semibold mb-3">Connect with the Developer</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white text-xl">🐦</a>
-              <a href="#" className="text-gray-400 hover:text-white text-xl">💼</a>
-              <a href="#" className="text-gray-400 hover:text-white text-xl">📸</a>
-              <a href="#" className="text-gray-400 hover:text-white text-xl">💻</a>
+              <a href="https://x.com/raijinsigma" target="_blank" className="text-gray-100 hover:text-white/70 text-xl"><i className="fa-brands fa-square-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/ujjwal-sharma-518039301/" target="_blank" className="text-gray-100 hover:text-white/70 text-xl"><i className="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/ujjwal_sharma2506/" target="_blank" className="text-gray-200 hover:text-white/70 text-xl"><i className="fa-brands fa-square-instagram"></i></a>
+              <a href="https://bsky.app/profile/raijinsigma.bsky.social" target="_blank" className="text-gray-100 hover:text-white/70 text-xl"><i className="fa-brands fa-square-bluesky"></i></a>
             </div>
           </div>
         </div>
